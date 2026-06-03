@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+figure,fieldset, form, label, legend,
+caption,tfoot, thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+*{
+    min-height: 0vw; /* Safari clamp関数対策 */
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	font-size: calc(12px + 4 * (100vw - 320px) / 1600);
+	line-height: 2em;
+	letter-spacing: 0.1em;
+	font-family: "こぶりなゴシック W6 JIS2004", "Koburina Gothic W6 JIS2004", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans JP", sans-serif;
+	color: #333;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale
+}
+
+.clearfix {
+	clear: both;
+}
+
+.en,
+.sub_title {
+	 font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	vertical-align: bottom;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+}
+
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border: 0;
+	border-collapse: collapse;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+a:link {
+	text-decoration: none;
+	color: #333;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #333;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.5;
+}
+
+/*-- END --*/
+
+.br_pc {
+	display: inline;
+}
+
+.br_sp,
+.br_tb,
+.br_tb_y {
+	display:none;
+}
+
+@media screen and (max-width: 1024px) {
+
+.br_tb_y,
+.br_tb {
+	display: inline;
+}
+
+.br_pc,
+.br_sp {
+	display:none;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.br_tb,
+.br_tb_y {
+	display: inline;
+}
+	
+.br_pc,
+.br_sp {
+	display: none;
+}
+}
+
+@media screen and (max-width: 420px) {
+
+.br_pc,
+.br_tb,
+.br_tb_y {
+	display: none;
+}
+	
+.br_sp {
+	display: inline;
+}
+}
+
+
+
+/*
+-------------------------------------
+ここからタブレット横向き用（768px）START
+-------------------------------------
+*/
